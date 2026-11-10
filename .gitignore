@@ -45,6 +45,7 @@ build-*/
 
 # CMake generated files
 CMakeFiles/
+CMakeScripts/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
@@ -66,3 +67,7 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Visual Studio Code
+.vscode/*
+*.code-workspace
