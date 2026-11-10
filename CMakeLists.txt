@@ -5,6 +5,8 @@ find_package(Designar QUIET)
 
 if(NOT Designar_FOUND)
     message(STATUS "DeSiGNAR no está instalado. Descargándolo desde GitHub...")
+    set(DESIGNAR_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+    set(DESIGNAR_BUILD_SAMPLES OFF CACHE BOOL "" FORCE)
     include(FetchContent)
     
     FetchContent_Declare(
@@ -19,9 +21,7 @@ endif()
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(SOURCES
-    src/main.cpp
-)
+file(GLOB SOURCES "src/*.cpp")
 
 add_executable(npk_compiler ${SOURCES})
 
