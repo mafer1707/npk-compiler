@@ -4,4 +4,4 @@
 
 using namespace Designar;
 
-Lexer make_lexer(const std::string& input);
+Lexer make_lexer();
