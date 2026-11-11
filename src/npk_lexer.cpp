@@ -45,8 +45,8 @@ Lexer make_lexer()
     lexer.add_token("LOGICO_O", "o");
 
     //Literales
-    lexer.add_token("CAD", "\"(" + mayus + "|" + minus + "|" + num + "|.|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])*\""); 
-    lexer.add_token("CAR", "'(" + mayus + "|" + minus + "|" + num + "|.|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])+'");
+    lexer.add_token("CAD", "\"(" + mayus + "|" + minus + "|" + num + "| |.|:|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])*\""); 
+    lexer.add_token("CAR", "'(" + mayus + "|" + minus + "|" + num + "|.|:|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])+'");
     lexer.add_token("NUM_ENTERO",  "-?(" + num + ")+");
     lexer.add_token("NUM_REAL", "-?(" + num + ")+" + "(.(" + num + ")+)?"); 
     
@@ -55,6 +55,7 @@ Lexer make_lexer()
     lexer.add_token("RESTA", "-");
     lexer.add_token("MUL", "\\*");
     lexer.add_token("DIV", "/");
+    lexer.add_token("MOD", "mod");
     lexer.add_token("ASIGNAR", ":=");
     lexer.add_token("IGUAL", "=");
     lexer.add_token("DISTINTO", "!=");

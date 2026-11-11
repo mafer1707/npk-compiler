@@ -1,0 +1,11 @@
+imprimir("Ingrese su edad:")
+entero edad
+leer(edad)
+
+si edad < 1 o edad > 120 hacer:
+	imprimir("Edad invalida")
+sino si edad < 18 hacer:
+	imprimir("Es menor de edad")
+sino
+	imprimir("Es mayor de edad")
+fin si

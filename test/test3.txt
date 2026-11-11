@@ -1,0 +1,9 @@
+imprimir("Ingrese un numero")
+entero num
+leer(num)
+
+si mod(num) = 0:
+	imprimir("Es un numero par")
+sino
+	imprimir("Es un numero impar")
+

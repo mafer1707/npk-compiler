@@ -1,0 +1,12 @@
+cadena nombres[3]
+
+nombres[0] := "Pedro"
+nombres[1] := "Maria"
+nombres[2] := "Julio"
+
+entero i := 0
+
+repetir desde i hasta 3:
+	imprimir("Nombre: ", nombres[i])
+	imprimir("Numero en la lista", i + 1)
+fin repetir
