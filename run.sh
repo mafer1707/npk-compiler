@@ -2,4 +2,4 @@
 cd build
 make
 echo "Ejecutando npk-compiler..."
-./npk_compiler
+./npk_compiler "$1"
