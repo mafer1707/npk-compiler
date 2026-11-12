@@ -45,8 +45,8 @@ Lexer make_lexer()
     lexer.add_token("LOGICO_O", "o");
 
     //Literales
-    lexer.add_token("CAD", "\"(" + mayus + "|" + minus + "|" + num + "| |.|:|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])*\""); 
-    lexer.add_token("CAR", "'(" + mayus + "|" + minus + "|" + num + "|.|:|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])+'");
+    lexer.add_token("CAD", "\"(" + mayus + "|" + minus + "|" + num + "| |;|.|:|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])*\""); 
+    lexer.add_token("CAR", "'(" + mayus + "|" + minus + "|" + num + "|;|.|:|,|<|>|=|\\+|-|!|#|%|\\*|\\?|\\(|\\)|{|}|[|])+'");
     lexer.add_token("NUM_ENTERO",  "-?(" + num + ")+");
     lexer.add_token("NUM_REAL", "-?(" + num + ")+" + "(.(" + num + ")+)?"); 
     
